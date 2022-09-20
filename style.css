@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+body {
+    background: #333 url(/city_03.jpg) no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: grayscale(100%);
+    color: #ccc;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.container h1 {
+    font-size: clamp(1rem, 5vw + 1rem, 8rem);
+    font-weight: 400;
+}
+.container h2 {
+    font-size: clamp(.5rem, 5vw + .5rem, 2rem);
+    font-weight: 200;
+    color: #aaa;
+    color: #fff9;
+}
+
+h1,
+h2 {
+    margin: 0.3rem;
+}
+
+.text__type > .txt::after {
+    content: '';
+    right: 0;
+    border-right: #aaa solid 2px;
+    animation: blink 750ms 1 forwards;
+    opacity: 1;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}
